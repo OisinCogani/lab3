@@ -225,8 +225,23 @@
           <clipPath id="a"><path fill="#fff" d="M0 0h982v239H0z" /></clipPath>
         </defs>
       </svg>
-      <h1>Hello, {{ title }}</h1>
+      <h1>Hello, {{ title }} Oisin Cogan S00182599</h1>
+    <h1> Movie Favourites</h1>
+    <ul>
+<li *ngFor="let movie of  movies"> {{movie.title}} ({{movie.year}}) - Directed by {{movie.director}} </li>
+ <li> For loop dependency injection</li>
+</ul>
+ <ul>
+
+
+  <li *ngFor="let movie of  movies"> {{movie.title}}  </li> 
+ </ul>  
+    
       <p>Congratulations! Your app is running. 🎉</p>
+    
+    
+    
+    
     </div>
     <div class="divider" role="separator" aria-label="Divider"></div>
     <div class="right-side">
@@ -238,12 +253,12 @@
           { title: 'Angular Language Service', link: 'https://angular.dev/tools/language-service' },
           { title: 'Angular DevTools', link: 'https://angular.dev/tools/devtools' },
         ]; track item.title) {
-          <a
+          <a>
             class="pill"
             [href]="item.link"
             target="_blank"
             rel="noopener"
-          >
+          
             <span>{{ item.title }}</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
